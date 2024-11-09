@@ -1,0 +1,84 @@
+<head>
+    <link rel="stylesheet" href="./assets/theme.css">
+    <style>
+        @font-face {
+            font-family: myLove;
+            src: url(assets/My\ Love.ttf);
+        }
+
+        body{
+            background-color: #fb9ad4;
+            color: white;
+            font-family: myLove;
+            letter-spacing: 0.1em;
+        }
+
+        #title, #percent{
+            font-size: 60px;
+        }
+
+        .nameTitle{
+            font-size: 40px;
+        }
+
+        .dataContainer{
+            width: 100%;
+        }
+
+        .userCard{
+            width: 40%;
+            height: 40%;
+            border: 3px solid #e18bbf;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .userCard input{
+            width: 90%;
+            height: 15%;
+            font-size: 150%;
+        }
+
+        .closenessInput{
+            width: 40%;
+            height: 7.5%;
+            font-size: 175%;
+        }
+
+        .calculateButton{
+            font-size: 275%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 id="title">♡ ♡ Do They Like Me? ♡ ♡</h1>
+        <br>
+        <h1 id="attractionPercent">Who's Attracted To Who? Not Calculated</h1>
+        <h1 id="attractionForce">Attraction Force Not Calculated</h1>
+        <br>
+        <div class="dataContainer">
+            <div class="userCard">
+                <h1 class="nameTitle">You</h1>
+                <br>
+                <input id="myMassInput" placeholder="Your Weight in Kilograms">
+            </div>
+            <div class="userCard">
+                <h1 class="nameTitle">Them</h1>
+                <br>
+                <input id="otherMassInput" placeholder="Their Weight in Kilograms">
+            </div>
+
+            <br><br>
+
+            <input id="distanceInput" class="closenessInput" placeholder="How close are you? (Meters)">
+
+            <br><br><br>
+
+            <button id="calculateButton" class="closenessInput calculateButton">♡ Calculate ♡</button>
+        </div>
+    </center>
+
+    <script src="index.js"></script>
+</body>
